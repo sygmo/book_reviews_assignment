@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Books Home</title>
+</head>
+<body>
+	<h1>Welcome, {{ request.session.user.first_name }}!</h1>
+	<p>This is the books page!</p>
+	<a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
